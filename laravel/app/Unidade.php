@@ -16,7 +16,10 @@ class Unidade extends Model
     }    
     public function visitantes() {
         
-       return $this->hasMany('App\Moradore');
+       return $this->hasMany('App\Visitante');
             
         }
+    public function moradore() {
+        return $this->belongsTo('App\Moradore');
+    }        
 }

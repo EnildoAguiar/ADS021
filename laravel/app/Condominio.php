@@ -25,6 +25,11 @@ class Condominio extends Model
         
        return $this->hasMany('App\Unidade');
             
+        } 
+    public function reservas() {
+        
+       return $this->hasMany('App\Reserva');
+            
         }      
    
 }

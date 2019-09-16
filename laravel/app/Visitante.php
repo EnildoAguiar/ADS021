@@ -11,7 +11,7 @@ class Visitante extends Model
         
     }
     public function unidade() {
-        return $this->belongsTo('App\Condominio');
+        return $this->belongsTo('App\Unidade');
         
     }
 }
