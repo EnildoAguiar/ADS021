@@ -10,4 +10,8 @@ class Visitante extends Model
         return $this->belongsTo('App\Condominio');
         
     }
+    public function unidade() {
+        return $this->belongsTo('App\Condominio');
+        
+    }
 }
