@@ -12,5 +12,7 @@ class Area extends Model
     public function reservas() {
         return $this->hasMany('App\Reserva');
     }
-    
+    public function reserva() {
+        return $this->belongsTo('App\Reserva');
+    }
 }
