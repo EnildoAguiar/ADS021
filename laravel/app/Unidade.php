@@ -14,4 +14,9 @@ class Unidade extends Model
      public function condominio() {
         return $this->belongsTo('App\Condominio');
     }    
+    public function visitantes() {
+        
+       return $this->hasMany('App\Moradore');
+            
+        }
 }
