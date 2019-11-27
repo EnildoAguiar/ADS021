@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class VisitanteController extends Controller
 {
     public function listar(){
-        return \App\Visitante::all();
+       return view ('visitante.listar' , ['visitantes' => Visitante::paginate(5)]);
     }
    
     public function criar(){
-        
+        view('visitante.criar');
     }
    
     public function editar($id){
