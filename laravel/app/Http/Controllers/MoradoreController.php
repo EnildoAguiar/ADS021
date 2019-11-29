@@ -1,18 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Moradore;
 use Illuminate\Http\Request;
 
 class MoradoreController extends Controller
 {
      public function listar(){
-        return Moradore::all();
+         return view ('moradore.listar' , ['moradores' => Moradore::paginate(5)]);
     }
    
     public function criar(){
-        
+        return view ('moradore.criar');
     }
    
     public function editar($id){
