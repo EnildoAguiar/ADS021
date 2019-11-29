@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class UnidadeController extends Controller
 {
      public function listar(){
-        return \App\Unidade::all();
+        return view ('unidade.listar' , ['unidades' => Unidade::paginate(5)]);
     }
    
     public function criar(){
-        
+        return view ('unidade.criar');
     }
    
     public function editar($id){

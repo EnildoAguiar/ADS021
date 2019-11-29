@@ -34,7 +34,7 @@ class CondominioController extends Controller
         $condominio->nome = $request->nome;
         $condominio->endereco = $request->endereco;
         $condominio->cnpj = $request->cnpj;
-        $condominio->cep = $request-cep;
+        $condominio->cep = $request->cep;
         $condominio->bairro = $request->bairro;
         $condominio->cidade = $request->cidade;
         $condominio->uf = $request->uf;

@@ -11,7 +11,7 @@ class VisitanteController extends Controller
     }
    
     public function criar(){
-        view('visitante.criar');
+        view ('visitante.criar');
     }
    
     public function editar($id){
